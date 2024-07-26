@@ -1,3 +1,4 @@
 images
-image_analysis.csv
+.env
 node_modules
+scripts/data

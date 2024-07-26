@@ -1,11 +1,12 @@
 const OpenAI = require("openai");
 const fs = require('fs-extra');
 const path = require('path');
+require('dotenv').config();
 
 const openai = new OpenAI({
-    apiKey: 'CENSORED',
-    organization: "CENSORED",
-    project: "proj_SI7DYq3LS1prVmiikwbO4kpQ",
+  apiKey: process.env.OPENAI_API_KEY,
+  organization: process.env.OPENAI_ORG,
+  project: process.env.OPENAI_PROJECT,
 });
 
 // Function to encode the image
